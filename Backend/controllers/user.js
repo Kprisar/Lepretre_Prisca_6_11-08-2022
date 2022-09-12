@@ -2,9 +2,12 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+const cryptojs=require('crypto-js');
+require('dotenv').config();
 
 
 exports.signup = (req, res, next) => {
+    const hashedEmail = cryptojs.SHA256(req.body.email)
     bcrypt.hash(req.body.password, 10)
       .then(hash => {
         const user = new User({
@@ -19,6 +22,7 @@ exports.signup = (req, res, next) => {
   };
 
   exports.login = (req, res, next) => {
+    const hashedEmail = cryptojs.SHA256(req.body.email)
     User.findOne({ email: req.body.email })
         .then(user => {
             if (!user) {
