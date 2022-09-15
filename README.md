@@ -8,10 +8,8 @@ Développement Backend en Javascript
 # Installations et utilisations
 1. Serveur Node.js
 2. Framework Express
-3. Base de données MongoDB
-4. Hébergement sur MongoDB Atlas
-5. Opérations relatives à la BDD réalisées avec mongoose
-6. API REST
+3. Base de données et hébergement MongoDB
+5. Opérations relatives à la base de données réalisées avec mongoose
 7. Sécurité OWASP et RGPD
 
 # Mesures de sécurité mises en place
