@@ -21,3 +21,16 @@ Développement Backend en Javascript
 6. Authentification de l'utilisateur par token avec jsonwebtoken
 7. Protection des headers avec helmet
 
+# Pour lancer l'application
+1- Cloner le frontend de l'application, et le lancer :
+2- Dans un terminal, accéder au dossier du frontend
+3- Installer les dépendances: npm install
+4- Lancer: npm run start
+5- Cloner ce repository backend actuel 
+
+Lancer le backend
+1- Dans un autre terminal, accéder au dossier du backend
+2- Installer les dépendances: npm install
+3- Lancer: nodemon serve
+4- Le frontend est accessible à l'adresse http://localhost:4200
+
