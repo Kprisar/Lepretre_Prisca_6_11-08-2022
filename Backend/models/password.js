@@ -12,16 +12,6 @@ passwordSchema
 .is().not().oneOf(['Passw0rd', 'Password123']); // Blacklist these values 
 
 
-// Validate against a password string
-console.log(passwordSchema.validate('validPASS123'));
-// => true
-console.log(passwordSchema.validate('invalidPASS'));
-// => false
-
-// Get a full list of rules which failed
-console.log(passwordSchema.validate('joke', { list: true }));
-// => [ 'min', 'uppercase', 'digits' ]
-
 
 
 module.exports = passwordSchema; 
